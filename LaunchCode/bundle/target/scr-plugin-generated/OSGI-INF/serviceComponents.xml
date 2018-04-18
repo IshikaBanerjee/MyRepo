@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component enabled="true" name="com.aem.community.sample.impl.HelloServiceImpl">
+        <implementation class="com.aem.community.sample.impl.HelloServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.aem.community.sample.HelloService"/>
+        </service>
+        <property name="service.pid" value="com.aem.community.sample.impl.HelloServiceImpl"/>
+        <reference name="repository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepository" unbind="unbindRepository"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.aem.community.sample.impl.filters.LoggingFilter">
+        <implementation class="com.aem.community.sample.impl.filters.LoggingFilter"/>
+        <service servicefactory="false">
+            <provide interface="javax.servlet.Filter"/>
+        </service>
+        <property name="service.ranking" type="Integer" value="-700"/>
+        <property name="sling.filter.scope" value="REQUEST"/>
+        <property name="service.pid" value="com.aem.community.sample.impl.filters.LoggingFilter"/>
+    </scr:component>
+    <scr:component enabled="true" immediate="true" name="com.aem.community.sample.LaunchCode">
+        <implementation class="com.aem.community.sample.LaunchCode"/>
+        <service servicefactory="false">
+            <provide interface="com.aem.community.sample.LaunchCode"/>
+            <provide interface="javax.servlet.Servlet"/>
+        </service>
+        <property name="sling.servlet.paths" value="/bin/launchcode"/>
+        <property name="service.pid" value="com.aem.community.sample.LaunchCode"/>
+    </scr:component>
+</components>

@@ -1,0 +1,6 @@
+com/aem/community/sample/impl/HelloServiceImpl.class
+com/aem/community/sample/package-info.class
+com/aem/community/sample/HelloService.class
+com/aem/community/sample/impl/filters/LoggingFilter.class
+com/aem/community/sample/MovieList.class
+com/aem/community/sample/LaunchCode.class

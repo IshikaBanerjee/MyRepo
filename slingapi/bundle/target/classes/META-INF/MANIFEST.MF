@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1524046914043
+Build-Jdk: 1.8.0_111
+Built-By: ishbaner1
+Bundle-Description: Maven Multimodule project for My Project.
+Bundle-ManifestVersion: 2
+Bundle-Name: My Project Bundle
+Bundle-SymbolicName: com.ishika.aem.slingapi-bundle
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.ishika.aem;version="1.0.0"
+Import-Package: com.day.cq.wcm.api;version="[1.2,2)",com.ishika.aem;vers
+ ion="[1.0,2)",javax.servlet,org.apache.sling.api;version="[2.3,3)",org.
+ apache.sling.api.request;version="[2.4,3)",org.apache.sling.api.resourc
+ e;version="[2.5,3)",org.apache.sling.jcr.api;version="[2.2,3)",org.slf4
+ j;version="[1.5,2)"
+Tool: Bnd-1.50.0

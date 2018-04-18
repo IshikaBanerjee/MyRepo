@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/slingapi.iml" filepath="$PROJECT_DIR$/slingapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bundle/slingapi-bundle.iml" filepath="$PROJECT_DIR$/bundle/slingapi-bundle.iml" />
+    </modules>
+  </component>
+</project>

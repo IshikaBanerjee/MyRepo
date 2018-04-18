@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1522942748285
+Build-Jdk: 1.8.0_111
+Built-By: ishbaner1
+Bundle-Description: Maven Multimodule project for My Project.
+Bundle-ManifestVersion: 2
+Bundle-Name: My Project Bundle
+Bundle-SymbolicName: com.community.querybuilder.sightlyQB-bundle
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.community.querybuilder;version="1.0.0",com.community
+ .querybuilder.scheduler;uses:="org.osgi.service.component,org.osgi.fram
+ ework,javax.mail,org.apache.sling.commons.scheduler,org.slf4j,javax.man
+ agement,javax.mail.internet";version="1.0.0.SNAPSHOT",com.community.que
+ rybuilder.sql;uses:="org.w3c.dom,javax.xml.transform.stream,javax.xml.p
+ arsers,javax.xml.transform.dom,javax.xml.transform";version="1.0.0.SNAP
+ SHOT"
+Import-Package: com.community.querybuilder;version="[1.0,2)",javax.jcr;v
+ ersion="[2.0,3)",javax.mail,javax.mail.internet,javax.management,javax.
+ servlet,javax.xml.parsers,javax.xml.transform,javax.xml.transform.dom,j
+ avax.xml.transform.stream,org.apache.sling.api;version="[2.1,3)",org.ap
+ ache.sling.api.request;version="[2.1,3)",org.apache.sling.commons.sched
+ uler;version="[2.2,3)",org.apache.sling.jcr.api;version="[2.1,3)",org.o
+ sgi.framework;version="[1.5,2)",org.osgi.service.component;version="[1.
+ 1,2)",org.slf4j;version="[1.5,2)",org.w3c.dom
+Tool: Bnd-1.50.0
